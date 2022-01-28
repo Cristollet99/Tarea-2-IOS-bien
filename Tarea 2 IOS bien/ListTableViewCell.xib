@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="67" id="KGk-i7-Jjw" customClass="ListTableViewCell" customModule="Tarea_2_IOS_bien" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="67"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="67"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bQ6-LG-XXp">
+                        <rect key="frame" x="12" y="3" width="120" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="5zd-Tn-81K"/>
+                            <constraint firstAttribute="width" constant="120" id="Bk2-Dj-WdQ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Workstation" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="854-Xe-9hL">
+                        <rect key="frame" x="10" y="38" width="120" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="qAL-XX-JME"/>
+                            <constraint firstAttribute="width" constant="120" id="wxm-DJ-WjP"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Salary" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e2j-OX-hiM">
+                        <rect key="frame" x="160.5" y="23" width="123" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="123" id="fma-Nt-dKf"/>
+                            <constraint firstAttribute="height" constant="21" id="ytm-y3-HJ2"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="854-Xe-9hL" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" constant="-90" id="1d7-0Z-Eqp"/>
+                    <constraint firstItem="bQ6-LG-XXp" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" constant="-88" id="4gw-j9-7JG"/>
+                    <constraint firstItem="bQ6-LG-XXp" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="3" id="KAW-5r-38k"/>
+                    <constraint firstItem="e2j-OX-hiM" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="23" id="LTG-5m-aCb"/>
+                    <constraint firstItem="e2j-OX-hiM" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" constant="62" id="s9u-cN-mep"/>
+                    <constraint firstItem="854-Xe-9hL" firstAttribute="top" secondItem="bQ6-LG-XXp" secondAttribute="bottom" constant="14" id="zNW-Ft-WBJ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="employeeName" destination="bQ6-LG-XXp" id="Xzy-TT-hDu"/>
+                <outlet property="employeeSalary" destination="e2j-OX-hiM" id="ovA-Wj-rFn"/>
+                <outlet property="employeeWorkstation" destination="854-Xe-9hL" id="dfb-Rc-THo"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="85.379464285714278"/>
+        </tableViewCell>
+    </objects>
+</document>
